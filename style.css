@@ -8,7 +8,13 @@
     --border: rgba(255, 255, 255, 0.1);
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    cursor: none;
+    user-select: none;
+}
 
 body {
     background: var(--bg-dark);
@@ -98,4 +104,8 @@ section.active { opacity: 1; visibility: visible; transform: translateY(0); poin
     .nav-links.active { right: 0; }
     .menu-toggle { display: block; }
     .glass-panel { padding: 30px 20px; }
+}
+
+.email-link{
+    color: rgb(189, 187, 187);
 }

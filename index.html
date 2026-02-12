@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABRAR ALI // SYSTEM ARCHITECT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="loader"><span>INITIALIZING_CORE...</span></div>
+    
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    
+    <div class="overlay"></div>
+    
+    <canvas id="bg"></canvas>
+
+    <nav>
+        <div class="logo">ABRAR<span class="cyan">.ALI</span></div>
+        <div class="menu-toggle" id="menuToggle">MENU</div>
+        <div class="nav-links" id="navLinks">
+            <button onclick="nav('home')">START</button>
+            <button onclick="nav('about')">PROFILE</button>
+            <button onclick="nav('skills')">ENGINE</button>
+            <button onclick="nav('contact')">UPLINK</button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="active">
+            <div class="hero">
+                <h1 class="glitch-text" data-text="NEURAL INTERFACE">NEURAL<br><span class="cyan">INTERFACE</span></h1>
+                <p class="tagline">// B.TECH CSE 2026 // ARCHITECT</p>
+                <div class="cta-group">
+                    <button class="cta-btn" onclick="nav('about')">ENTER_SYSTEM</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="glass-panel">
+                <h2 class="cyan">// 01_CORE_DATA</h2>
+                <p>Architecting digital landscapes where high-performance logic meets fluid aesthetics. Specializing in Full-Stack systems and Real-time 3D environments.</p>
+                <div class="status-grid">
+                    <div class="status"><span>STATUS</span><span class="pulse"></span> ACTIVE</div>
+                    <div class="status"><span>LEVEL</span>SR_DEV</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="glass-panel wide">
+                <h2 class="cyan">// 02_TECH_FORGE</h2>
+                <div class="skill-matrix">
+                    <div class="skill">REACT.JS</div>
+                    <div class="skill">THREE.JS</div>
+                    <div class="skill">NODE.JS</div>
+                    <div class="skill">PYTHON</div>
+                    <div class="skill">DOCKER</div>
+                    <div class="skill">AWS</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="glass-panel">
+                <h2 class="cyan">// 03_SIGNAL_UPLINK</h2>
+                <p>Initiate a direct connection for collaborative ventures or technical inquiries.</p>
+                <a href="mailto:hello@abrar.ali" class="email-link">abrar.ali@system.com</a>
+            </div>
+        </section>
+    </main>
+
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
